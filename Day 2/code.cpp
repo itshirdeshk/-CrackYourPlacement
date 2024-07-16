@@ -58,7 +58,7 @@ vector<vector<int>> threeSum(vector<int> &nums)
     return ans;
 }
 
-// Q4. 4Sum.
+// Q3. 4Sum.
 vector<vector<int>> fourSum(vector<int> &nums, int target)
 {
     vector<vector<int>> ans;
@@ -100,7 +100,7 @@ vector<vector<int>> fourSum(vector<int> &nums, int target)
     return ans;
 }
 
-// Q5. Maximum Points You Can Obtain from Cards.
+// Q4. Maximum Points You Can Obtain from Cards.
 int maxScore(vector<int> &cardPoints, int k)
 {
     int res = 0;
@@ -123,7 +123,7 @@ int maxScore(vector<int> &cardPoints, int k)
     return res;
 }
 
-// Q6. Subarray Sum Equals K.
+// Q5. Subarray Sum Equals K.
 int subarraySum(vector<int> &nums, int k)
 {
     if (nums.size() == 1 && nums[0] != k)
@@ -147,7 +147,7 @@ int subarraySum(vector<int> &nums, int k)
     return total;
 }
 
-// Q7. Valid Parentheses.
+// Q6. Valid Parentheses.
 bool isValid(string s)
 {
     stack<char> st;
@@ -188,7 +188,7 @@ bool isValid(string s)
     return st.empty();
 }
 
-// Q8. Print all the duplicate characters in a string.
+// Q7. Print all the duplicate characters in a string.
 void printDups(string str)
 {
     unordered_map<char, int> count;
@@ -258,7 +258,7 @@ int strStr(string haystack, string needle)
     return -1;
 }
 
-// Q10. Longest Common Prefix.
+// Q9. Longest Common Prefix.
 string longestCommonPrefix(vector<string> &v)
 {
     string ans = "";
